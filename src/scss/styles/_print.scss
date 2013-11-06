@@ -1,0 +1,69 @@
+/* http://coding.smashingmagazine.com/2013/03/08/tips-tricks-print-style-sheets/ */
+
+@media print {
+
+	header h1 {
+	   margin-right: 200px;
+	   margin-bottom: 2rem;
+	   line-height: 1.5;
+	}
+
+
+	a {
+      font-weight: bolder;
+      text-decoration: none;
+	}
+
+	a[href^=http]:after {
+      content:" <" attr(href) "> ";
+	}
+
+	article a[href^="#"]:after {
+	   content: "";
+	}
+	$a:after > img {
+		content: "";
+	}
+
+	a:not(:local-link):after {
+		content:" <" attr(href) "> ";
+	}
+
+	h1 {
+      color: #000;
+      background: none;
+	}
+
+	nav, aside {
+      display: none;
+	}
+
+	body, article {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+	}
+
+	@page {
+      margin: 2cm;
+	}
+
+	h2, h3 {
+	   page-break-after: avoid;
+	}
+
+	ul, img {
+	   page-break-inside: avoid;
+	}
+
+	article {
+		page-break-before: always;
+	}
+
+	img {
+	   max-width: 100% !important;
+	}
+
+
+
+}//@print

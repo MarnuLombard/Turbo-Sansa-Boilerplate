@@ -1,0 +1,26 @@
+header[role="banner"] {
+
+	.logo {
+	}
+}
+
+.nav {
+	@at-root {
+		#{&}--main {
+
+
+			.link-wrapper {
+			}
+			.nav_link {
+
+				&:hover {
+				}
+			} // nav_link
+		}// --main
+
+		#{&}--footer {
+
+		}// --footer
+	}// @root
+
+}// nav

@@ -1,0 +1,14 @@
+@function trans($color, $percentage) {
+ @return lighten($color, (1-$percentage)*5%);
+}
+
+@mixin tran($type, $color, $percentage) {
+    @if $type == color {
+        color: trans($color, $percentage);
+        color: rgba($color, $percentage);
+    }
+    @if $type == bg {
+        background-color: trans($color, $percentage);
+        background-color: rgba($color, $percentage);
+    }
+}

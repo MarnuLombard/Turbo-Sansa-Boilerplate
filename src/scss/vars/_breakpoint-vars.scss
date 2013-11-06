@@ -1,0 +1,19 @@
+// Default Features
+$breakpoint-default-media:      all !default;
+$breakpoint-default-feature:    min-width !default;
+$breakpoint-default-pair:       width !default;
+
+// Default Transforms
+$breakpoint-force-media-all:    false !default;
+$breakpoint-to-ems:             false !default;
+$breakpoint-resolutions:        true !default;
+
+// Default No Query Options
+$breakpoint-no-queries:         false !default;
+$breakpoint-no-query-fallbacks: false !default;
+
+// Default Base Font Size
+$breakpoint-base-font-size:     16px !default;
+
+// Legacy Syntax Support
+$breakpoint-legacy-syntax:      false !default;

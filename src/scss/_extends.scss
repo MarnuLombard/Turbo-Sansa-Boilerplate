@@ -1,0 +1,22 @@
+.center {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.clearfix {
+	&:after{
+		content:"";
+		display:table;
+		clear:both;
+	}
+}
+
+.screenreader {
+	font: #{0/0} a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
