@@ -8,14 +8,13 @@ module.exports = function(grunt) {
 
     // watch for changes and trigger sass, concat, uglify and livereload
     watch: {
-
       icons: {
         files: ['icons/*.svg'],
         tasks: ['webfont']
       },
       sass: {
         files: ['scss/**/*', 'scss/*'],
-        tasks: ['sass']
+        tasks: ['sass:dev']
       },
       js: {
         files: [
@@ -23,7 +22,7 @@ module.exports = function(grunt) {
           'js/*',
           'js/**/*'
         ],
-        tasks: ['concat', 'uglify']
+        tasks: ['concat']
       },
       livereload: {
         options: { livereload: true },
@@ -51,9 +50,22 @@ module.exports = function(grunt) {
 
     // sass and scss
     sass: {
-      dist: {
+      dev: {
         options: {
           sourcemap: true,
+          style: 'nested',
+          precision: '2',
+          compass: true,
+          cache: 'delete/'
+        },
+        files: {
+          '../dist/css/style.css':'scss/style.scss',
+          '../dist/css/no-mq.css':'scss/no-mq.scss'
+        }
+      },
+      dist: {
+        options: {
+          sourcemap: false,
           style: 'compressed',
           precision: '2',
           compass: true,
@@ -67,9 +79,20 @@ module.exports = function(grunt) {
     },
 
     // concat files
-    // to avoid ie errors on uglify
     concat: {
-      ie: {
+      dev : {
+        files: {
+          '../dist/js/script.min.js': [
+            'js/vendor/*',
+            'js/plugins/*'
+          ],
+          '../dist/js/app.min.js': [
+            'js/app.js'
+          ]
+        }
+      },
+      dist: {
+      // to avoid ie errors on uglify
         files: {
           '../dist/js/ie.min.js': [
             'js/ie/*'
@@ -80,16 +103,12 @@ module.exports = function(grunt) {
 
     // uglify to concat & minify
     uglify: {
-      script: {
+      dist: {
         files: {
           '../dist/js/script.min.js': [
             'js/vendor/*',
             'js/plugins/*'
-          ]
-        }
-      },
-      app: {
-        files: {
+          ],
           '../dist/js/app.min.js': [
             'js/app.js'
           ]
@@ -99,8 +118,8 @@ module.exports = function(grunt) {
 
   });
 
-
-// register task
-grunt.registerTask('default', ['watch']);
+  // register task
+  grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('dist', ['webfont', 'sass:dist', 'concat:dist', 'uglify:dist']);
 
 };
