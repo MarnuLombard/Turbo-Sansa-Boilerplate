@@ -1,14 +1,13 @@
-@function trans($color, $percentage) {
- @return lighten($color, (1-$percentage)*5%);
-}
+// as perhttp://thesassway.com/intermediate/mixins-for-semi-transparent-colors
+// usage:
+// 			.class {
+// 				@include alpha('background-color', rgba(black, 0.5), white);
+// 			}
 
-@mixin tran($type, $color, $percentage) {
-    @if $type == color {
-        color: trans($color, $percentage);
-        color: rgba($color, $percentage);
-    }
-    @if $type == bg {
-        background-color: trans($color, $percentage);
-        background-color: rgba($color, $percentage);
-    }
+@mixin alpha($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
 }
