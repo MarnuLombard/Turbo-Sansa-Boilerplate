@@ -1,9 +1,11 @@
 @import "vars/compass-vars"; //--> Import this first
 
+// Project Vars
+@import "vars/typography-vars";
+@import "vars/color-vars";
+
+// Lib vars (using some project vars)
 @import "vars/breakpoint-vars";
 @import "vars/sassy-buttons-vars";
-@import "vars/color-vars";
 @import "vars/csswizardry-grids-vars";
 @import "vars/typeplate-vars";
-@import "vars/typography-vars";
-@import "vars/slider-vars";
