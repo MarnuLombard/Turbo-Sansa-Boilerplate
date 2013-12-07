@@ -2,6 +2,10 @@
 	"folders":
 	[
 		{
+			"file_exclude_patterns":
+			[
+				"src/Gemfile.lock"
+			],
 			"follow_symlinks": true,
 			"path": "/Users/marnu/Dropbox/Marnu-work/Turbo-Sansa-Boilerplate"
 		}

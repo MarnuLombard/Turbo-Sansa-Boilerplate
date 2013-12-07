@@ -1,11 +1,11 @@
-.center {
+%center {
 	float: none;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
 }
 
-.clearfix {
+%clearfix {
 	&:after{
 		content:"";
 		display:table;
@@ -13,7 +13,7 @@
 	}
 }
 
-.screenreader {
+%screenreader {
 	font: #{0/0} a;
   color: transparent;
   text-shadow: none;

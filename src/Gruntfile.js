@@ -56,6 +56,7 @@ module.exports = function(grunt) {
           style: 'nested',
           precision: '2',
           compass: true,
+          require: 'sass-globbing',
           cache: 'delete/'
         },
         files: {
@@ -69,6 +70,7 @@ module.exports = function(grunt) {
           style: 'compressed',
           precision: '2',
           compass: true,
+          require: 'sass-globbing',
           cache: 'delete/'
         },
         files: {

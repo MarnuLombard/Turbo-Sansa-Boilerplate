@@ -3,7 +3,7 @@
     STYLE.CSS
 \*------------------------------------*/
 // Compass
-@import "compass/support";
+/* @import "compass/support";
 @import "compass/css3";
 
 // Functionals
@@ -30,4 +30,21 @@
 @import "objects/footer";
 @import "objects/partials";
 @import "objects/navbar";
-@import "objects/sliders";
+@import "objects/sliders"; */
+
+@import "compass/support";
+@import "compass/css3";
+
+// Functionals
+@import "vars";
+@import "extends";
+@import "mixins/*";
+
+// Libraries
+@import "libs/*";"
+
+// Styles
+@import "styles/*";
+
+// Objects
+@import "objects/*";
