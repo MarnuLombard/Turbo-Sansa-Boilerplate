@@ -36,7 +36,7 @@ Header set X-UA-Compatible "IE=edge" env=best-standards-support
 
 
 # --------------------------------------------------------------------
-https://managewp.com/wordpress-setup-mistakes
+# https://managewp.com/wordpress-setup-mistakes
 # --------------------------------------------------------------------
 
 # disable the server signature
