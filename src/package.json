@@ -1,10 +1,10 @@
 {
   "name": "Turbo-Sansa-Boilerplate",
   "version": "0.0.1",
-  "description" : "An oppinionated Sass, Grunt, Node, PHP boilerplate for new front-end web projects",
-  "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/MarnuLombard/Turbo-Sansa-Boilerplate.git"
+  "description": "An oppinionated Sass, Grunt, Node, PHP boilerplate for new front-end web projects",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/MarnuLombard/Turbo-Sansa-Boilerplate.git"
   },
   "dependencies": {
     "load-grunt-tasks": "~0.1.0"
@@ -15,6 +15,7 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-sass": "~0.5.0",
-    "grunt-webfont": "~0.2.0"
+    "grunt-webfont": "~0.2.0",
+    "grunt-svgmin": "~0.3.0"
   }
 }

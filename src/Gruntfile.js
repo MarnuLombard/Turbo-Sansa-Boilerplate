@@ -33,6 +33,24 @@ module.exports = function(grunt) {
           '../dist/includes/**/*.php'
         ]
       }
+    }, // end watch
+
+    // Compress all svg files
+    svgmin: {
+      options: {
+        plugins: [{
+          removeViewBox: false
+        }]
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'src/img',
+          src: ['**/*.svg'],
+          dest: '../dist/img/',
+          ext: '.svg'
+        }]
+      }
     },
 
     // To generate the icon fonts from the files in my ./src/icons/ directory
