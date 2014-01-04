@@ -1,21 +1,65 @@
 @charset "UTF-8";
-/*------------------------------------*\
-    STYLE.CSS
-\*------------------------------------*/
+/*-----------------------------------------------------------------------*\
+  Project:      Turpo-Sansa Boilerplate
+  Author:       Marnu Lombard (marnulombard.com)
+  Description:  An oppinionated Sass, Grunt, PHP boilerplate
+                for new front-end web projects.
+  SCSS Libs:    breakpoint, csswizardry-grids, normalize,
+                sassy-buttons, typeplate
+  Repo:         http://github.com/MarnuLombard/Turbo-Sansa-Boilerplate
+\*-----------------------------------------------------------------------*/
 
 @import "compass/support";
 @import "compass/css3";
 
-// Functionals
-@import "vars";
+// Variables for all modules
+// Import project-specific vars first
+@import "vars/compass-vars";
+@import "vars/color-vars";
+@import "vars/typography-vars";
+
+@import "vars/breakpoint-vars";
+@import "vars/csswizardry-grids-vars";
+@import "vars/sassy-buttons-vars";
+@import "vars/typeplate-vars";
+
+
+// (Usually) Silent classes to extend into other selectors
 @import "extends";
-@import "mixins/*";
 
-// Libraries
-@import "libs/*";"
+// Third party libraries used in projects
+@import "libs/breakpoint";
+@import "libs/csswizardry-grids";
+@import "libs/normalize";
+@import "libs/sassy-buttons";
+@import "libs/typeplate";
 
-// Styles
-@import "styles/*";
+// Mixins (and sometimes functions)
+@import "mixins/bem";
+@import "mixins/clearfix";
+@import "mixins/degrade-from";
+@import "mixins/enhance-with";
+@import "mixins/even-distribution";
+@import "mixins/font-face";
+@import "mixins/gradients";
+@import "mixins/icon-fonts";
+@import "mixins/inline-block__hack";
+@import "mixins/rempx";
+@import "mixins/RGBa";
+@import "mixins/svg-fallback";
+@import "mixins/vertical-center";
 
-// Objects
-@import "objects/*";
+// Styles for generic html objects
+@import "styles/color";
+@import "styles/forms";
+@import "styles/icons";
+@import "styles/layout";
+@import "styles/lists";
+@import "styles/print";
+@import "styles/typography";
+
+// Styles for project-specific elements
+@import "objects/footer";
+@import "objects/navbar";
+@import "objects/partials";
+
