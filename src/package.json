@@ -1,7 +1,7 @@
 {
   "name": "Turbo-Sansa-Boilerplate",
-  "version": "0.0.1",
-  "description": "An oppinionated Sass, Grunt, Node, PHP boilerplate for new front-end web projects",
+  "version": "0.0.3",
+  "description": "An oppinionated Sass, Grunt, PHP boilerplate for new front-end web projects",
   "repository": {
     "type": "git",
     "url": "http://github.com/MarnuLombard/Turbo-Sansa-Boilerplate.git"
