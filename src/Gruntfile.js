@@ -8,6 +8,10 @@ module.exports = function(grunt) {
 
     // watch for changes and trigger sass, concat, uglify and livereload
     watch: {
+      svgmin: {
+        files: ['img/*.svg'],
+        tasks: ['svgmin']
+      },
       icons: {
         files: ['icons/*.svg'],
         tasks: ['webfont']
@@ -45,7 +49,7 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'src/img',
+          cwd: 'img',
           src: ['**/*.svg'],
           dest: '../dist/img/',
           ext: '.svg'
