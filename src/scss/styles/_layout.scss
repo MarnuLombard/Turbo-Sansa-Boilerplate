@@ -3,6 +3,11 @@ body * {
 	box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 // to wrap all grid objects
 //to give all rows a bit of spacing
 section,
