@@ -12,3 +12,22 @@
   background-color: transparent;
   border: 0;
 }
+
+
+// For when you need full Legacy support, including old IE and old Firefox
+// From http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+%clearfix-legacy {
+  @include clearfix(false, 'legacy');
+}
+
+// For when you need old IE support, but not concerned with old Firefox
+// From http://nicolasgallagher.com/better-float-containment-in-ie/
+%clearfix-micro {
+  @include clearfix(false, 'micro');
+}
+
+// Clearfix for modern browsers, especially when using border-box
+// From http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+%clearfix {
+  @include clearfix(false, 'modern');
+}

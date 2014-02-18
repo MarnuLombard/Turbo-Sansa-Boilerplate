@@ -1,19 +1,27 @@
 //general icons style
 .icon {
-	@include icon;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: none;
+  line-height: 1;
+  font: {
+      style: normal;
+      variant: normal;
+      weight: normal;
+      family: $font-icons;
+  }
 }
 
 
 // Icon list (corresponds to icon font characters)
-// Note associative arrays will be easier in Sass version 3.3: https://github.com/nex3/sass/issues/642
+// eg github:   '\f100',
 $icons: (
-
 );
 
-// Automagically Set up a class name for each icon
-@each $icon in $icons {
-    $name: nth($icon, 1);
-    .icon-#{$name} {
-        @include icon('before', false, $name);
-    }
+
+@each $icon, $unicode in $icons {
+  .icon-#{$icon}:before {
+      content: $unicode;
+  }
 }

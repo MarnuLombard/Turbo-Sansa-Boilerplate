@@ -73,35 +73,3 @@ $toolkit-clearfix: true;
     }
   }
 }
-
-//////////////////////////////
-// Legacy Clearfix
-//
-// For when you need full Legacy support, including old IE and old Firefox
-//
-// From http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
-//////////////////////////////
-%clearfix-legacy {
-  @include clearfix(false, 'legacy');
-}
-
-//////////////////////////////
-// Micro Clearfix
-//
-// For when you need old IE support, but not concerned with old Firefox
-// From http://nicolasgallagher.com/better-float-containment-in-ie/
-//////////////////////////////
-%clearfix-micro {
-  @include clearfix(false, 'micro');
-}
-
-//////////////////////////////
-// Modern Clearfix
-//
-// Clearfix for modern browsers, especiall when using border-box
-//
-// From http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
-//////////////////////////////
-%clearfix {
-  @include clearfix(false, 'modern');
-}

@@ -1,5 +1,6 @@
-$font-body: 					"Arial", arial, sans-serif;
-$font-headings: 			"Helvetica Neue", "Helvetica", sans-serif;
-$font-icons: 					"";
+$font-body: 			"Arial", arial, sans-serif;
+$font-headings: 	"Helvetica Neue", "Helvetica", sans-serif;
+$font-icons: 			"icons";
 
-$base-font-size: 			16px;
+$font-size: 			16;
+$font-size-px:    $font-size * 1px;

@@ -13,7 +13,7 @@ $breakpoint-no-queries:         false !default;
 $breakpoint-no-query-fallbacks: false !default;
 
 // Default Base Font Size
-$breakpoint-base-font-size:     $base-font-size; // as per _typography-vars
+$breakpoint-base-font-size:     $font-size-px; // as per _typography-vars
 
 // Legacy Syntax Support
 $breakpoint-legacy-syntax:      false !default;

@@ -23,10 +23,6 @@
 @import "vars/sassy-buttons-vars";
 @import "vars/typeplate-vars";
 
-
-// (Usually) Silent classes to extend into other selectors
-@import "extends";
-
 // Third party libraries used in projects
 @import "libs/breakpoint";
 @import "libs/csswizardry-grids";
@@ -42,12 +38,14 @@
 @import "mixins/even-distribution";
 @import "mixins/font-face";
 @import "mixins/gradients";
-@import "mixins/icon-fonts";
 @import "mixins/inline-block__hack";
 @import "mixins/rempx";
 @import "mixins/RGBa";
 @import "mixins/svg-fallback";
 @import "mixins/vertical-center";
+
+// (Usually) Silent classes to extend into other selectors
+@import "extends";
 
 // Styles for generic html objects
 @import "styles/color";
