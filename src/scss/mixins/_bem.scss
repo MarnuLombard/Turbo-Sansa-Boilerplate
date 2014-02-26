@@ -2,13 +2,12 @@
 // Found here: http://ericsembrat.com/2013/10/16/sass-3-3-stomping-on-bem/
 //
 // Requires:
-// Sass >= (v3.3.0.rc.1)
-// Compass >= (v0.13.alpha.10)
+// Sass >= (v3.3.0.rc.5)
 // ----
 
 //elements get appended with “__” and the $name
 @mixin e($name) {
-  @at-root #{&}__#{$name} {
+  @at-root &__#{$name} {
     @content;
   }
 }
@@ -21,7 +20,7 @@
 
 //modifiers get appended with “–” and the $name
 @mixin m($name) {
-  @at-root #{&}--#{$name} {
+  @at-root &--#{$name} {
     @content;
   }
 }

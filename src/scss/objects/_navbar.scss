@@ -5,11 +5,10 @@ header[role="banner"] {
 }
 
 .nav {
-	@at-root {
-		#{&}--main {
-
+	@include modifier(main) {
 
 			.link-wrapper {
+
 			}
 			.nav_link {
 
@@ -18,9 +17,8 @@ header[role="banner"] {
 			} // nav_link
 		}// --main
 
-		#{&}--footer {
+		@include modifier(footer) {
 
 		}// --footer
-	}// @root
 
 }// nav
