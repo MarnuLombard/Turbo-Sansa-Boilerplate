@@ -19,13 +19,12 @@
 @import "vars/typography-vars";
 
 @import "vars/breakpoint-vars";
-@import "vars/csswizardry-grids-vars";
 @import "vars/sassy-buttons-vars";
 @import "vars/sassline-vars";
 
 // Third party libraries used in projects
 @import "libs/breakpoint";
-@import "libs/csswizardry-grids";
+@import "libs/singularitygs";
 @import "libs/normalize";
 @import "libs/sassy-buttons";
 @import "libs/sassline";
@@ -33,14 +32,10 @@
 // Mixins (and sometimes functions)
 @import "mixins/bem";
 @import "mixins/clearfix";
-@import "mixins/degrade-from";
-@import "mixins/enhance-with";
 @import "mixins/even-distribution";
 @import "mixins/font-face";
-@import "mixins/gradients";
-@import "mixins/inline-block__hack";
-@import "mixins/rempx";
-@import "mixins/RGBa";
+@import "mixins/inline-block";
+@import "mixins/modernizr";
 @import "mixins/svg-fallback";
 @import "mixins/vertical-center";
 
