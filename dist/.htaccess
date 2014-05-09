@@ -1,8 +1,8 @@
 #send www.hostname.com requests to hostname.com
 <IfModule mod_rewrite.c>
-#  RewriteCond %{HTTPS} !=on
-#  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-#  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 # Force IE into best-standards mode
@@ -42,13 +42,6 @@ Header set X-UA-Compatible "IE=edge" env=best-standards-support
 # disable the server signature
 ServerSignature Off
 
-
-# if running WP,
-# protect wpconfig.php
-<files wp-config.php>
-  order allow,deny
-  deny from all
-</files>
 
 # disable directory browsing
 Options All -Indexes
