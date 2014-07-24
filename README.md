@@ -1,6 +1,6 @@
 Turbo Sansa Boilerplate
 =======================
-v0.3.0
+v0.3.1
 
 #####A Sass, Grunt, Node, PHP boilerplate for new front-end web projects
 
