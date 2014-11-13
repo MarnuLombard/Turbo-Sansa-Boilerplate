@@ -1,6 +1,6 @@
-*~
 .DS_Store
-delete
+.delete
 node_modules
-*.project-workspace
-*.sublime-workspace
+bower_components
+.vagrant
+.idea
