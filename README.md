@@ -14,7 +14,7 @@ This the the "framework" I use to start up all of my projects.
 
 * some [Grunt.js](http://gruntjs.com) tasks set up,
 * a whole bunch of [Sass](http://sass-lang.com) stylesheets (requires Sass >= 3.3.0)
-* a few Sass libraries ([Breakpoint](http://breakpoint-sass.com) , [Typeplate](http://http://typeplate.com) , [Normalize](http://git.io/normalize) , [CSSWizardry-Grids](http://csswizardry.com/csswizardry-grids/‎) , [Sassy-Buttons](http://jaredhardy.com/sassy-buttons/‎) )
+* a few Sass libraries ([Breakpoint](http://breakpoint-sass.com) , [Typesettings](http:/typesettings.io) , [Sanitize.Css](http://jonathantneal.github.io/sanitize.css/) , [CSSWizardry-Grids](http://csswizardry.com/csswizardry-grids/‎) , [Sassy-Buttons](http://jaredhardy.com/sassy-buttons/‎) )
 
 ---
 
