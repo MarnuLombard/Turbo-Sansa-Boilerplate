@@ -2,13 +2,11 @@ Turbo Sansa Boilerplate
 =======================
 v0.4.0
 
-#####A Sass, Grunt, Node, PHP boilerplate for new front-end web projects
+#####An opinionated Sass, Grunt & Bower boilerplate for new front-end web projects
 
 *Because I didn't want to call it the 'Marnu Lombard Boilerplate'*
 
 ---
-
-
 
 This the the "framework" I use to start up all of my projects.
 
