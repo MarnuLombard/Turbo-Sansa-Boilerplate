@@ -1,0 +1,24 @@
+{
+  "name": "Turbo-Sansa-Boilerplate",
+  "version": "0.4.0",
+  "homepage": "https://github.com/MarnuLombard/Turbo-Sansa-Boilerplate",
+  "authors": [
+    "Marnu Lombard <marnulombard@gmail.com>"
+  ],
+  "description": "An opinionated Sass, Grunt & Bower boilerplate for new front-end web projects",
+  "main": "js/app.js",
+  "keywords": [
+    "sass",
+    "grunt",
+    "bower",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
