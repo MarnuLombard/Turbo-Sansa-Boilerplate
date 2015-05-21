@@ -2,40 +2,42 @@
 /*-----------------------------------------------------------------------*\
   Project:      Turpo-Sansa Boilerplate
   Author:       Marnu Lombard (marnulombard.com)
-  Description:  An oppinionated Sass, Grunt, PHP boilerplate
-                for new front-end web projects.
-  SCSS Libs:    breakpoint, csswizardry-grids, normalize,
-                sassy-buttons, typeplate
+  Description:  An oppinionated Sass, Grunt & Bower boilerplate
+                for new front-end web projects
+  SCSS Libs:    breakpoint, csswizardry-grids, sanitize,
+                sassy-buttons, typesettings
   Repo:         http://github.com/MarnuLombard/Turbo-Sansa-Boilerplate
 \*-----------------------------------------------------------------------*/
 
+// Compass
+@import "vars/compass-vars";
 @import "compass/support";
 @import "compass/css3";
 
 // Variables for all modules
 // Import project-specific vars first
-@import "vars/compass-vars";
 @import "vars/color-vars";
 @import "vars/typography-vars";
 
-@import "vars/breakpoint-vars";
+@import "vars/csswizardry-grids-vars";
+@import "vars/sanitize-vars";
 @import "vars/sassy-buttons-vars";
-@import "vars/sassline-vars";
+@import "vars/typesettings-vars";
 
 // Third party libraries used in projects
 @import "libs/breakpoint";
-@import "libs/singularitygs";
-@import "libs/normalize";
+@import "libs/csswizardry-grids";
+@import "libs/sanitize";
 @import "libs/sassy-buttons";
-@import "libs/sassline";
+@import "libs/typesettings";
 
 // Mixins (and sometimes functions)
 @import "mixins/bem";
 @import "mixins/clearfix";
 @import "mixins/even-distribution";
 @import "mixins/font-face";
+@import "mixins/font-smoothing";
 @import "mixins/inline-block";
-@import "mixins/modernizr";
 @import "mixins/svg-fallback";
 @import "mixins/vertical-center";
 
@@ -55,4 +57,3 @@
 @import "objects/footer";
 @import "objects/navbar";
 @import "objects/partials";
-
