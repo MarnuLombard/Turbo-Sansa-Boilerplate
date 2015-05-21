@@ -1,0 +1,21 @@
+/**
+ * Created by Maximilian Hoffmann
+ * See : http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+ */
+
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-text-stroke: 1px transparent;
+    text-stroke: 1px transparent;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    font-smoothing: auto;
+    -webkittext-stroke: 0 none;
+    text-stroke: 0 none;
+  }
+}

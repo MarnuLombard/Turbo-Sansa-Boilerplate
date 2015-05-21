@@ -1,4 +1,4 @@
-%inline-block__hack {
+%inline-block {
 	display:-moz-inline-stack;
 	display:inline-block;
 	zoom:1;
@@ -6,6 +6,6 @@
 	vertical-align: top;
 }
 
-@mixin inline-block__hack {
-	@extend %inline-block__hack;
+@mixin inline-block {
+	@extend %inline-block;
 }
